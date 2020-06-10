@@ -1,0 +1,99 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/bg_1.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-2 bread">Our Blogs</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index'%}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 ftco-animate">
+                <div class="blog-entry">
+                    <a href="" class="block-20 d-flex align-items-end" style="background-image: url(/static/images/4b.jpg);">
+                        <div class="meta-date text-center p-2">
+                            <span class="day">25</span>
+                            <span class="mos">Sept</span>
+                            <span class="yr">2019</span>
+                        </div>
+                    </a>
+                    <div class="text bg-white p-4">
+                        <h3 class="heading"><a href="#">World Pharmacists Day 2019 </a></h3>
+                        <p>
+                            Crescent School of Pharmacy celebrated World Pharmacist Day on September 25, 2019. Our beloved Vice Chancellor Tan Sri Dato’ Sri Prof. IR.Dr.Sahol Hamid Bin Abu bakar, Dr. A.Azad, Registrar, All India Drug Officers Confederation, Mr. C. Arther Paul and
+                            Mrs. Uma Shankari, Drugs Inspector, Kancheepuram Zone, were participated in the programme.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                            <p class="ml-auto mb-0">
+                                <a href="#" class="mr-2">Admin</a>
+                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ftco-animate">
+                <div class="blog-entry">
+                    <a href="" class="block-20 d-flex align-items-end" style="background-image: url(/static/images/1b.jpg);">
+                        <div class="meta-date text-center p-2">
+                            <span class="day">14</span>
+                            <span class="mos">Sept</span>
+                            <span class="yr">2019</span>
+                        </div>
+                    </a>
+                    <div class="text bg-white p-4">
+                        <h3 class="heading"><a href="#">A One-day Summit on Corporate Governance</a></h3>
+                        <p>Crescent School of Business, BSA Crescent Institute of Science & Technology actively participated in Corporate Governance Summit organised by Institute of Directors (IOD) on 14th September, 2019 Hotel ITC Grand Chola, Chennai.
+                            Theme: Emerging Trends in Corporate Governance
+
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                            <p class="ml-auto mb-0">
+                                <a href="#" class="mr-2">Admin</a>
+                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ftco-animate">
+                <div class="blog-entry">
+                    <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url(/static/images/2b.jpg);">
+                        <div class="meta-date text-center p-2">
+                            <span class="day">13</span>
+                            <span class="mos">Sept</span>
+                            <span class="yr">2019</span>
+                        </div>
+                    </a>
+                    <div class="text bg-white p-4">
+                        <h3 class="heading"><a href="#">Website Inauguration and release of the first Newsletter</a></h3>
+                        <p>Our Honourable Pro Chancellor Mr. Abdul Qadir Abdul Rahman Buhari inaugurated the website of Office of Alumni Relations on 13 Sept 2019 and also released the first newsletter of Office of Alumni Relations on the same day. Our Honourable
+                            Vice Chancellor received the first copy of the first Newsletter.</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                            <p class="ml-auto mb-0">
+                                <a href="#" class="mr-2">Admin</a>
+                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% block blog %} {% endblock %}
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

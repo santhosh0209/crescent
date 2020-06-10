@@ -1,0 +1,815 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <title>Crescent Education</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %} ">
+
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %} ">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %} ">
+
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %} ">
+
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+</head>
+
+<body>
+    <div class="bg-top navbar-light">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-center align-items-stretch">
+                <div class="col-md-4 d-flex align-items-center py-4">
+                    <a class="navbar-brand" href=""><img id="logo" src="{% static 'images/logo.png' %}" alt=""></a>
+                </div>
+                <div class="col-lg-8 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                            <div class="text">
+                                <span>Email</span>
+                                <span>bsar@Crescent.educaiton</span>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                            <div class="text">
+                                <span>Call</span>
+                                <span>Call Us: +91 4422 7513 47</span>
+                            </div>
+                        </div>
+                        <div class="col-md topper d-flex align-items-center justify-content-end">
+                            <p class="mb-0">
+                                <a href="{% url 'contact' %}" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+                                    <span>Apply now</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container d-flex align-items-center px-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+            <form action="#" class="searchform order-lg-last">
+                <div class="form-group d-flex">
+                    <input type="text" class="form-control pl-3" placeholder="Search">
+                    <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
+                </div>
+            </form>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link pl-0">Home</a></li>
+                    <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="{% url 'course' %}" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="{% url 'staff' %}" class="nav-link">Staff</a></li>
+                    <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image:url(/static/images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                    <div class="col-md-6 ftco-animate">
+                        <h1 class="mb-4">Education Needs Complete Solution</h1>
+                        <p>Education is the passport to the future, for tomorrow belongs to those who prepare today.</p>
+                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item" style="background-image:url(/static/images/c2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                    <div class="col-md-6 ftco-animate">
+                        <h1 class="mb-4">University, College School Education</h1>
+                        <p>The function of education is to teach one to think intensively and to think critically.</p>
+                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-services ftco-no-pb">
+        <div class="container-wrap">
+            <div class="row no-gutters">
+                <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+                    <div class="media block-6 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-teacher"></span>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Certified Teachers</h3>
+                            <p>The good teacher explains. The superior teacher demonstrates. The great teacher inspires.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+                    <div class="media block-6 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-reading"></span>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Special Education</h3>
+                            <p>The only person who is educated is the one who has learned how to learn …and change.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+                    <div class="media block-6 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-books"></span>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Book &amp; Library</h3>
+                            <p>The only thing that you absolutely have to know, is the location of the library.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+                    <div class="media block-6 d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-diploma"></span>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Sport Clubs</h3>
+                            <p>I always felt that my greatest asset was not my physical ability, it was my mental ability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftc-no-pb">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
+                    <div class="img" style="background-image: url(/static/images/about.jpg); "></div>
+                </div>
+                <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+                    <h2 class="mb-4">What We Offer</h2>
+                    <p>To ensure quality education to students through industry oriented curriculum & syllabi, highly qualified faculty, choice based credit system, state of the art infrastructure facilities and student centric academic system.
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
+                                <div class="text pl-3">
+                                    <h3>Academic Systems</h3>
+                                    <p>Holistically monitor the academic system of the Institute.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
+                                <div class="text pl-3">
+                                    <h3>Regular Classes</h3>
+                                    <p>Facilitate updation of curriculum and syllabus for academic programmes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
+                                <div class="text pl-3">
+                                    <h3>Certified Teachers</h3>
+                                    <p>Better than thousand days of delight study is one day witha good teacher.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-education"></span></div>
+                                <div class="text pl-3">
+                                    <h3>Useful Programmes</h3>
+                                    <p>Facilitate conduct of Academic Council,Administration Audit and Convocation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-jigsaw"></span></div>
+                                <div class="text pl-3">
+                                    <h3>Creative Lessons</h3>
+                                    <p>Ensuring quality teaching – learning process through structured mechanism.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-kids"></span></div>
+                                <div class="text pl-3">
+                                    <h3>Sports Facilities</h3>
+                                    <p>Don't be grumpy; get on to the field for a sport!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/static/images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-2 d-flex">
+                <div class="col-md-6 align-items-stretch d-flex">
+                    <div class="img img-video d-flex align-items-center" style="background-image: url(/static/images/c2.jpg);">
+                        <div class="video justify-content-center">
+                            <!-- <a href="" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"> -->
+                            <!-- <span class="ion-ios-play"></span> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
+                    <h2 class="mb-4">Crescent University</h2>
+                    <p>B.S. Abdur Rahman Crescent Institute of Science and technology is a renowned Quality Leadership Institution located at the greenest spot of Chennai near Tambaram. Through our long history of 36 years of excellence, the Institution
+                        has offered access to a wide range of academic opportunities.</p>
+                    <p> With 46 programmes, grouped under 12 different Schools, 27 Undergraduate programmes, 19 Postgraduate programmes, and Ph.D. (in all the departments), this institution is a rising stalwart in higher education with promising Quality,
+                        Security and Placement.</p>
+                </div>
+            </div>
+            <div class="row d-md-flex align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <div class="row d-md-flex align-items-center">
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="icon"><span class="flaticon-doctor"></span></div>
+                                <div class="text">
+                                    <strong class="number" data-number="200" aria-details="++">0</strong>
+
+                                    <span>Certified Teachers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="icon"><span class="flaticon-doctor"></span></div>
+                                <div class="text">
+                                    <strong class="number" data-number="301">0</strong>
+                                    <span>Events</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="icon"><span class="flaticon-doctor"></span></div>
+                                <div class="text">
+                                    <strong class="number" data-number="70">0</strong>
+                                    <span>Courses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="icon"><span class="flaticon-doctor"></span></div>
+                                <div class="text">
+                                    <strong class="number" data-number="120">0</strong>
+                                    <span>Awards Won</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4"><span>Our</span> Courses</h2>
+                    <p>We offer various kinds of courses such as all Engineering & Techonology and Arts & Science Courses.Here are some of the Popular Courses listed below</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 course ftco-animate">
+                    <div class="img" style="background-image: url(/static/images/polymer.jpg);"></div>
+                    <div class="text pt-4">
+                        <p class="meta d-flex">
+                            <span><i class="icon-user mr-2"></i>Crescent</span>
+                            <span><i class="icon-table mr-2"></i>100+ seats</span>
+                            <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                        </p>
+                        <h3><a href="#">Polymer Engineering</a></h3>
+                        <p>This course is now available at B. S. Abdur Rahman Crescent Institute Of Science And Technology.</p>
+                        <p><a href="{% url 'contact' %}" class="btn btn-primary">Apply now</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 course ftco-animate">
+                    <div class="img" style="background-image: url(/static/images/it.jpg);"></div>
+                    <div class="text pt-4">
+                        <p class="meta d-flex">
+                            <span><i class="icon-user mr-2"></i>Crescent</span>
+                            <span><i class="icon-table mr-2"></i>150+ seats</span>
+                            <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                        </p>
+                        <h3><a href="#">Information Technology</a></h3>
+                        <p>This course is now available at B. S. Abdur Rahman Crescent Institute Of Science And Technology.</p>
+                        <p><a href="{% url 'contact' %}" class="btn btn-primary">Apply now</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 course ftco-animate">
+                    <div class="img" style="background-image: url(/static/images/mech.jpg);"></div>
+                    <div class="text pt-4">
+                        <p class="meta d-flex">
+                            <span><i class="icon-user mr-2"></i>Crescent</span>
+                            <span><i class="icon-table mr-2"></i>80+ seats</span>
+                            <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                        </p>
+                        <h3><a href="#">Mechanical Engineering</a></h3>
+                        <p>This course is now available at B. S. Abdur Rahman Crescent Institute Of Science And Technology.</p>
+                        <p><a href="{% url 'contact' %}" class="btn btn-primary">Apply now</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 course ftco-animate">
+                    <div class="img" style="background-image: url(/static/images/civil.jpg);"></div>
+                    <div class="text pt-4">
+                        <p class="meta d-flex">
+                            <span><i class="icon-user mr-2"></i>Crescent</span>
+                            <span><i class="icon-table mr-2"></i>90+ seats</span>
+                            <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                        </p>
+                        <h3><a href="#">Civil Engineering</a></h3>
+                        <p>This course is now available at B. S. Abdur Rahman Crescent Institute Of Science And Technology.</p>
+                        <p><a href="{% url 'contact' %}" class="btn btn-primary">Apply now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Our Team</h2>
+                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(/static/images/1.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h3>Dr. M.S. Haji Sheik Mohammed</h3>
+                            <span class="position mb-2">Dean</span>
+                            <div class="faded">
+                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+                                <ul class="ftco-social text-center">
+                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(/static/images/2.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h3>Dr. M. Mohamed Ismail</h3>
+                            <span class="position mb-2">Deputy Dean</span>
+                            <div class="faded">
+                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+                                <ul class="ftco-social text-center">
+                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(/static/images/3.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h3>A.Catherine Anna Pushpam</h3>
+                            <span class="position mb-2">ACADEMIC ADMINISTRATOR</span>
+                            <div class="faded">
+                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+                                <ul class="ftco-social text-center">
+                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(/static/images/4.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h3>V.Roopa</h3>
+                            <span class="position mb-2">ACADEMIC ADMINISTRATOR</span>
+                            <div class="faded">
+                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+                                <ul class="ftco-social text-center">
+                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(/static/images/bg_5.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-6 py-5 px-md-5">
+                    <div class="py-md-5">
+                        <div class="heading-section heading-section-white ftco-animate mb-5">
+                            <h2 class="mb-4">Request A Quote</h2>
+                            <p>Request a quote to get custom details about any course that are available. Please take a moment to fill in the form.</p>
+                        </div>
+                        <form action="#" class="appointment-form ftco-animate">
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group ml-md-4">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <div class="select-wrap">
+                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                            <select name="" id="" class="form-control">
+		                    	<option style="color: black; font-weight: bold;" value="">Select Your Course</option>
+		                      <option style="color: black;" value="">CSE</option>
+                              <option style="color: black;" value="">IT</option>
+		                      <option style="color: black;" value="">ECE</option>
+		                      <option style="color: black;" value="">EIE</option>
+		                      <option style="color: black;" value="">EEE</option>
+		                      <option style="color: black;" value="">Mechanical</option>
+		                      <option style="color: black;" value="">Civil</option>
+		                      <option style="color: black;" value="">Others</option>
+
+		                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ml-md-4">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group ml-md-4">
+                                    <input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4"><span>Recent</span> Blog</h2>
+                    <p>There are so many various kinds of activities done in our University. Here are some of the samples of events that were done recently.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 ftco-animate">
+                    <div class="blog-entry">
+                        <a href="" class="block-20 d-flex align-items-end" style="background-image: url(/static/images/4b.jpg);">
+                            <div class="meta-date text-center p-2">
+                                <span class="day">25</span>
+                                <span class="mos">Sept</span>
+                                <span class="yr">2019</span>
+                            </div>
+                        </a>
+                        <div class="text bg-white p-4">
+                            <h3 class="heading"><a href="#">World Pharmacists Day 2019 </a></h3>
+                            <p>
+                                Crescent School of Pharmacy celebrated World Pharmacist Day on September 25, 2019. Our beloved Vice Chancellor Tan Sri Dato’ Sri Prof. IR.Dr.Sahol Hamid Bin Abu bakar, Dr. A.Azad, Registrar, All India Drug Officers Confederation, Mr. C. Arther Paul and
+                                Mrs. Uma Shankari, Drugs Inspector, Kancheepuram Zone, were participated in the programme.
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2">Admin</a>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ftco-animate">
+                    <div class="blog-entry">
+                        <a href="" class="block-20 d-flex align-items-end" style="background-image: url(/static/images/1b.jpg);">
+                            <div class="meta-date text-center p-2">
+                                <span class="day">14</span>
+                                <span class="mos">Sept</span>
+                                <span class="yr">2019</span>
+                            </div>
+                        </a>
+                        <div class="text bg-white p-4">
+                            <h3 class="heading"><a href="#">A One-day Summit on Corporate Governance</a></h3>
+                            <p>Crescent School of Business, BSA Crescent Institute of Science & Technology actively participated in Corporate Governance Summit organised by Institute of Directors (IOD) on 14th September, 2019 Hotel ITC Grand Chola, Chennai.
+                                Theme: Emerging Trends in Corporate Governance
+
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2">Admin</a>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ftco-animate">
+                    <div class="blog-entry">
+                        <a href="" class="block-20 d-flex align-items-end" style="background-image: url(/static/images/2b.jpg);">
+                            <div class="meta-date text-center p-2">
+                                <span class="day">13</span>
+                                <span class="mos">Sept</span>
+                                <span class="yr">2019</span>
+                            </div>
+                        </a>
+                        <div class="text bg-white p-4">
+                            <h3 class="heading"><a href="#">Website Inauguration and release of the first Newsletter</a></h3>
+                            <p>Our Honourable Pro Chancellor Mr. Abdul Qadir Abdul Rahman Buhari inaugurated the website of Office of Alumni Relations on 13 Sept 2019 and also released the first newsletter of Office of Alumni Relations on the same day. Our
+                                Honourable Vice Chancellor received the first copy of the first Newsletter.</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2">Admin</a>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Parents Says About Us</h2>
+                    <p>This information allows us to see where our strengths lie and also the areas in which we need to improve.</p>
+                </div>
+            </div>
+            <div class="row ftco-animate justify-content-center">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img mr-4" style="background-image: url(/static/images/f2.jpg)">
+                                </div>
+                                <div class="text ml-2">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                          <i class="icon-quote-left"></i>
+                        </span>
+                                    <p>My daughter is very happy, the teaching staff are very good at nurturing and developing the students academic skills as well as social interaction..</p>
+                                    <p class="name">Mrs.Radha</p>
+                                    <span class="position">Mother</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img mr-4" style="background-image: url(/static/images/m1.jpg)">
+                                </div>
+                                <div class="text ml-2">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                          <i class="icon-quote-left"></i>
+                        </span>
+                                    <p>I love this College, keep it up, good teachers - you guys are so welcoming.</p>
+                                    <p class="name">Mr.Shankar </p>
+                                    <span class="position">Father</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img mr-4" style="background-image: url(/static/images/f2.jpg)">
+                                </div>
+                                <div class="text ml-2">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                          <i class="icon-quote-left"></i>
+                        </span>
+                                    <p>My child is very happy at this school and they love how they do not get bullied.</p>
+                                    <p class="name">Mrs.Priya</p>
+                                    <span class="position">Mother</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-gallery">
+        <div class="container-wrap">
+            <div class="row no-gutters">
+                <div class="col-md-3 ftco-animate">
+                    <a href="{% static 'images/1a.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/1a.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <a href="{% static 'images/2a.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/2a.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <a href="{% static 'images/4a.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/4a.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <a href="{% static 'images/3a.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/3a.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">GST Road, Vandalur, Chennai 600 048. Tamilnadu. INDIA</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 4422 7513 47</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">bsar@Crescent.educaiton</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Recent Blog</h2>
+                        <div class="block-21 mb-4 d-flex">
+                            <a class="blog-img mr-4" style="background-image: url(/static/images/image_1.jpg);"></a>
+                            <div class="text">
+                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                                <div class="meta">
+                                    <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
+                                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-21 mb-5 d-flex">
+                            <a class="blog-img mr-4" style="background-image: url(/static/images/image_2.jpg);"></a>
+                            <div class="text">
+                                <h3 class="heading"><a href="#"> Teaching is not a lost art, but the regard for it is a lost tradition</a></h3>
+                                <div class="meta">
+                                    <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
+                                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-5 ml-md-4">
+                        <h2 class="ftco-heading-2">Quick Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="https://crescent.education/student-affairs/about-student-affairs/"><span class="ion-ios-arrow-round-forward mr-2"></span>Student Affairs</a></li>
+                            <li><a href="https://crescent.education/connect/staff/academics/deans-desk/"><span class="ion-ios-arrow-round-forward mr-2"></span>Academics</a></li>
+                            <li><a href="https://crescent.education/accreditation-ranking/about-us/"><span class="ion-ios-arrow-round-forward mr-2"></span>Accreditation</a></li>
+                            <li><a href="https://crescent.education/departments/"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li>
+                            <li><a href="https://crescent.education/cu-events-2/"><span class="ion-ios-arrow-round-forward mr-2"></span>Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Subscribe Us!</h2>
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate"><a href="https://twitter.com/bsacrescentinst"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/BSACrescentInstitute/"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/bsacrescentinstitute/"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        Copyright &copy; All rights reserved | This website is made <i class="icon-heart" aria-hidden="true"></i> by <a href="" target="_blank">Abdul Rauf</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ztXnks9djn8D2jtieDX8ByQjBBObMAs&sensor=false"></script>
+    <script src="{% static 'js/google-map.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
